@@ -12,6 +12,7 @@
 		741E953E2BBD6B92009E5FB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 741E953D2BBD6B92009E5FB0 /* Assets.xcassets */; };
 		741E95412BBD6B92009E5FB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 741E95402BBD6B92009E5FB0 /* Preview Assets.xcassets */; };
 		741E95572BBD7CFB009E5FB0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E95562BBD7CFB009E5FB0 /* LoginView.swift */; };
+		747DB2812BC0029600D450FA /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747DB2802BC0029600D450FA /* NewMessageView.swift */; };
 		747FC4422BBDA26300054063 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747FC4412BBDA26300054063 /* RegistrationView.swift */; };
 		747FC4462BBDA82100054063 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747FC4452BBDA82100054063 /* InboxView.swift */; };
 		747FC4492BBDAB8200054063 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747FC4482BBDAB8200054063 /* ActiveNowView.swift */; };
@@ -25,6 +26,7 @@
 		741E953D2BBD6B92009E5FB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		741E95402BBD6B92009E5FB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		741E95562BBD7CFB009E5FB0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		747DB2802BC0029600D450FA /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		747FC4412BBDA26300054063 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		747FC4452BBDA82100054063 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		747FC4482BBDAB8200054063 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
@@ -99,8 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				747FC4472BBDAB5A00054063 /* ActiveNow */,
-				747FC4442BBDA80900054063 /* Inbox */,
 				741E95522BBD7C66009E5FB0 /* Authentication */,
+				747FC4442BBDA80900054063 /* Inbox */,
+				747DB27F2BC0025500D450FA /* New Message */,
 				741E95542BBD7CCA009E5FB0 /* Root */,
 			);
 			path = Core;
@@ -143,6 +146,14 @@
 				747FC4412BBDA26300054063 /* RegistrationView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		747DB27F2BC0025500D450FA /* New Message */ = {
+			isa = PBXGroup;
+			children = (
+				747DB2802BC0029600D450FA /* NewMessageView.swift */,
+			);
+			path = "New Message";
 			sourceTree = "<group>";
 		};
 		747FC4442BBDA80900054063 /* Inbox */ = {
@@ -233,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				747FC44B2BBDB02D00054063 /* InboxRowView.swift in Sources */,
+				747DB2812BC0029600D450FA /* NewMessageView.swift in Sources */,
 				741E95572BBD7CFB009E5FB0 /* LoginView.swift in Sources */,
 				741E953C2BBD6B8E009E5FB0 /* ContentView.swift in Sources */,
 				747FC4462BBDA82100054063 /* InboxView.swift in Sources */,
