@@ -26,13 +26,22 @@ struct InboxView: View {
                 .frame(height: UIScreen.main.bounds.height - 120)
                 
             }
+            .navigationDestination(for: User.self, destination: {user in
+                ProfileView(user: user)
+            })
             .fullScreenCover(isPresented: $showMessageView, content: {
                 NewMessageView()
             })
             .toolbar{
                 ToolbarItem(placement: .navigationBarLeading){
                     HStack{
-                        Image(systemName: "person.circle.fill")
+                        NavigationLink(value: user){
+                            Image(user.profileImageURL ?? "")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 32, height: 32)
+                                .clipShape(Circle())
+                        }
                         
                         Text("Chats")
                             .font(.title)
