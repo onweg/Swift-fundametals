@@ -15,6 +15,7 @@ struct InboxView: View {
     var body: some View {
         NavigationStack{
             ScrollView{
+                
                 ActiveNowView()
                 
                 List{
@@ -36,7 +37,7 @@ struct InboxView: View {
                 ToolbarItem(placement: .navigationBarLeading){
                     HStack{
                         NavigationLink(value: user){
-                            CircularProfileImageView_(user: user, size: .xSmall)
+                            CircularProfileImageView(user: user, size: .xSmall)
                         }
                         
                         Text("Chats")

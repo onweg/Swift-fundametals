@@ -14,6 +14,7 @@ struct User: Codable, Identifiable, Hashable {
     var profileImageURL: String?
 }
 
+
 extension User{
     static let MOCK_USER = User(fullname: "Arkadiy Frolkin", email: "gmail@gmail.com" , profileImageURL: "userImage")
 }

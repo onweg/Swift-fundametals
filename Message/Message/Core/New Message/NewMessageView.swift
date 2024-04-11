@@ -29,7 +29,7 @@ struct NewMessageView: View {
                 ForEach(0 ... 10, id: \.self){ user in
                     VStack{
                         HStack{
-                            CircularProfileImageView_(user: User.MOCK_USER, size: .small)
+                            CircularProfileImageView(user: User.MOCK_USER, size: .small)
                             
                             Text("User name")
                                 .font(.subheadline)

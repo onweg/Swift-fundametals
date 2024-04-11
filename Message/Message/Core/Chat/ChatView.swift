@@ -16,7 +16,7 @@ struct ChatView: View {
             ScrollView{
                 
                 VStack{
-                    CircularProfileImageView_(user: User.MOCK_USER, size: .xLarge)
+                    CircularProfileImageView(user: User.MOCK_USER, size: .xLarge)
                     
                     VStack(spacing: 4){
                         Text(User.MOCK_USER.fullname)

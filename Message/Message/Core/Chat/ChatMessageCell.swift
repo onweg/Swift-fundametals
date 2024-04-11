@@ -24,7 +24,7 @@ struct ChatMessageCell: View {
                     .frame(maxWidth: UIScreen.main.bounds.width / 1.5, alignment: .trailing)
             }else{
                 HStack(alignment: .bottom, spacing: 8){
-                    CircularProfileImageView_(user: User.MOCK_USER, size: .xxSmall)
+                    CircularProfileImageView(user: User.MOCK_USER, size: .xxSmall)
                     
                     Text("test message test message test message test message test message test message")
                         .font(.subheadline)
@@ -45,6 +45,6 @@ struct ChatMessageCell: View {
 
 struct ChatMessageCell_Previews: PreviewProvider {
     static var previews: some View {
-        ChatMessageCell(isFromCurrentUser: false)
+        ChatMessageCell(isFromCurrentUser: true)
     }
 }

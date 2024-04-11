@@ -26,6 +26,6 @@ struct ShapeMessage: Shape {
 
 struct ShapeMessage_Previews: PreviewProvider {
     static var previews: some View {
-        ShapeMessage(isFromCurrentUser: true)
+        ShapeMessage(isFromCurrentUser: false)
     }
 }
